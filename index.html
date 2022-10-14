@@ -5,23 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Etch A Sketch</title>
+    <title>Document</title>
 </head>
 <body>
-<div class="container">
-    <div class="name">Sketch Board</div>
-    <div class="game-container">
-        <div>
-            <button class="grid-size" onclick="promptQuestion()">Grid size</button>
-        </div>
-        <div class="grid"></div>
+    <div class="title">Sketch Board</div>
+    <div class="container">
+        <button class="size" onclick="sizeChange()">grid size</button>
+        <div class="board"></div>
         <div class="buttons">
             <button>Blue</button>
             <button>Red</button>
         </div>
     </div>
-</div>
-
 
     <script src="script.js"></script>
 </body>
