@@ -10,12 +10,17 @@
 <body>
     <div class="title">Sketch Board</div>
     <div id="container">
-        <button id="eraser">Erase</button>
+        <div class="upper-btn">
+        <button class="erase" onclick="changeColor('white')">Erase</button>
+        <button id="delete">Delete</button>
         <button class="size" onclick="sizeChange()">grid size</button>
+    </div>
         <div class="board"></div>
         <div class="buttons">
-            <button>Blue</button>
-            <button>Red</button>
+            <button class="blue" onclick="changeColor('blue')">Blue</button>
+            <button class="red" onclick="changeColor('red')">Red</button>
+            <button class="green" onclick="changeColor('green')">Green</button>
+            <button class="yellow" onclick="changeColor('yellow')">Yellow</button>
         </div>
     </div>
 
