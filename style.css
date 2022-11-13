@@ -1,5 +1,91 @@
+html{
+background-image: url('https://img.freepik.com/free-vector/3d-wireframe-grid-room-background_53876-101083.jpg');
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+height: 100%;
+}
+
 .board {
-    width: 500px;
-    height: 500px;
+    width: 750px;
+    height: 650px;
     display: grid;
+}
+
+#container {
+    display: flex;
+    margin: auto;
+    width: 80%;
+    border: 3px solid #C0C0C0;
+    padding: 10px;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+}
+
+.upper-btn{
+    margin: 20px 0; 
+}
+
+.erase, #delete, .size {
+    background-color: #C0C0C0;
+    padding: 5px 20px;
+    font-weight: bold;
+    font-size: 15px;
+    border-radius: 5px;
+    border: none;
+    margin: 0 10px;
+}
+
+
+.blue, .red, .black, .green, .yellow{
+    background-color: #C0C0C0;
+    border-radius: 5px;
+    padding: 5px 20px;
+    font-weight: bold;
+    font-size: 15px;
+    margin: 0 5px;
+    border: none;
+}
+
+.blue:active {
+    transform: scale(0.98);
+    /* Scaling button to 0.98 to its original size */
+    box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
+    /* Lowering the shadow */
+}
+
+.red:active {
+    transform: scale(0.98);
+    box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
+}
+
+.black:active {
+    transform: scale(0.98);
+    box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
+}
+
+.green:active {
+    transform: scale(0.98);
+    box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
+}
+
+.yellow:active {
+    transform: scale(0.98);
+    box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
+}
+
+.erase:active {
+    transform: scale(0.98);
+    box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
+}
+
+#delete:active {
+    transform: scale(0.98);
+    box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
+}
+
+.size:active {
+    transform: scale(0.98);
+    box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
 }

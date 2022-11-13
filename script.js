@@ -4,12 +4,14 @@ table.style.gridTemplateRows = 'repeat(16, 1fr)';
 
 let colorChange = 'black';
 
+
 //loops through creating div's
 for(let i = 0; i < 10000; i++){
     const square = document.createElement('div');
     square.classList.add('box');
     square.style.backgroundColor = 'white';
-   square.addEventListener('mouseover', backColor);
+    square.style.opacity = 0.5;
+   square.addEventListener('mousemove', backColor);
     
 //once button is press button will delete with the background of black will turn green
 let del = document.getElementById('delete')
@@ -32,9 +34,17 @@ function sizeChange() {
 }
 
 function backColor() {
-    this.style.backgroundColor = colorChange;
+    if(colorChange === 'random'){
+        this.style.backgroundColor = `hsla(${Math.random() * 360}, 100%, 70%, 1)`;
+    }else {
+        this.style.backgroundColor = colorChange;
+    }
 }
+
 
 function changeColor(btn) {
     colorChange = btn;
 }
+
+
+

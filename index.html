@@ -8,19 +8,21 @@
     <title>Document</title>
 </head>
 <body>
-    <div class="title">Sketch Board</div>
+    <div class="title">King Sketch</div>
     <div id="container">
+        <div class="board"></div>
+
         <div class="upper-btn">
         <button class="erase" onclick="changeColor('white')">Erase</button>
         <button id="delete">Delete</button>
-        <button class="size" onclick="sizeChange()">grid size</button>
-    </div>
-        <div class="board"></div>
+        <button class="size" onclick="sizeChange()">size</button>
+        </div>
         <div class="buttons">
             <button class="blue" onclick="changeColor('blue')">Blue</button>
             <button class="red" onclick="changeColor('red')">Red</button>
+            <button class="black" onclick="changeColor('black')">Black</button>
             <button class="green" onclick="changeColor('green')">Green</button>
-            <button class="yellow" onclick="changeColor('yellow')">Yellow</button>
+            <button class="yellow" onclick="changeColor('random')">Yellow</button>
         </div>
     </div>
 
